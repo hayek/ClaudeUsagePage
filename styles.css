@@ -77,7 +77,7 @@ body {
 
 .star-7 {
     top: 10%;
-    right: 20%;
+    right: 40%;
     width: 26px;
     height: 26px;
 }
@@ -118,8 +118,8 @@ body {
 }
 
 .star-13 {
-    top: 5%;
-    left: 25%;
+    top: 8%;
+    left: 48%;
     width: 33px;
     height: 33px;
 }
@@ -526,13 +526,144 @@ body {
 }
 
 @media (max-width: 480px) {
+    .page-content {
+        padding: 30px 20px 50px;
+    }
+
+    .hero {
+        margin-bottom: 40px;
+    }
+
+    .app-title {
+        font-size: 36px;
+    }
+
+    .app-subtitle {
+        font-size: 18px;
+    }
+
+    .feature-description {
+        font-size: 16px;
+    }
+
     .feature-text {
         align-items: center;
     }
 
+    .feature-text .download-button {
+        margin-top: 30px;
+    }
+
     .download-button {
-        padding: 14px 36px;
+        padding: 14px 32px;
+        font-size: 16px;
         width: 100%;
         text-align: center;
+    }
+
+    .menu-column .menu-view {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .widgets-section {
+        padding: 24px 16px;
+        margin-top: 0;
+    }
+
+    .widget-img {
+        max-width: 150px;
+    }
+
+    .faq-main-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .faq-item {
+        padding: 18px;
+    }
+
+    .faq-question {
+        font-size: 18px;
+    }
+
+    .faq-answer {
+        font-size: 15px;
+    }
+
+    .summary-section {
+        margin-top: 60px;
+        padding: 30px 0;
+        gap: 24px;
+    }
+
+    .summary-title {
+        font-size: 24px;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+}
+
+/* Extra small screens (iPhone SE, etc) */
+@media (max-width: 375px) {
+    .page-content {
+        padding: 24px 16px 40px;
+    }
+
+    .app-title {
+        font-size: 32px;
+    }
+
+    .app-subtitle {
+        font-size: 17px;
+    }
+
+    .app-badge {
+        font-size: 13px;
+        padding: 5px 14px;
+    }
+
+    .feature-description {
+        font-size: 15px;
+    }
+
+    .download-button {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    .widget-img {
+        max-width: 130px;
+    }
+
+    .widgets-section {
+        padding: 20px 12px;
+    }
+
+    .widgets-grid {
+        gap: 16px;
+    }
+
+    .faq-main-title {
+        font-size: 26px;
+    }
+
+    .summary-title {
+        font-size: 22px;
+    }
+
+    .faq-question {
+        font-size: 17px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
     }
 }
