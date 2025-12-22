@@ -265,11 +265,85 @@ body {
     margin-top: 40px;
 }
 
+/* Feature Cards (History, Insights, Share) */
+.feature-card {
+    display: block;
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.feature-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.feature-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.5));
+}
+
+/* History Section */
+.history-section {
+    margin-top: 80px;
+}
+
+.history-image {
+    max-width: 100%;
+}
+
+/* Insights Section */
+.insights-section {
+    margin-top: 24px;
+}
+
+.insights-image {
+    max-width: 100%;
+}
+
+/* Share Section */
+.share-section {
+    margin-top: 24px;
+}
+
+.share-card-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.share-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.share-icon {
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) brightness(0.9);
+}
+
+.share-image {
+    max-width: 280px;
+    flex-shrink: 0;
+}
+
+.share-card-content .feature-description {
+    flex: 1;
+}
+
 /* Widgets Section */
 .widgets-section {
     /* Override grid from .feature-section */
     display: block;
-    margin-top: 80px;
+    margin-top: 24px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     padding: 40px;
@@ -487,8 +561,38 @@ body {
     }
 
     .widgets-section {
-        margin-top: 0;
+        margin-top: 24px;
         padding: 30px 20px;
+    }
+
+    /* Feature cards responsive */
+    .feature-card {
+        margin-top: 60px;
+        padding: 24px;
+    }
+
+    .history-section {
+        margin-top: 60px;
+    }
+
+    .insights-section,
+    .share-section {
+        margin-top: 16px;
+    }
+
+    .share-card-content {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .share-text-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .share-image {
+        max-width: 240px;
     }
 
     .widgets-table {
@@ -572,7 +676,19 @@ body {
 
     .widgets-section {
         padding: 24px 16px;
-        margin-top: 0;
+        margin-top: 16px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-card-content {
+        gap: 20px;
+    }
+
+    .share-image {
+        max-width: 200px;
     }
 
     .widget-img {
