@@ -697,16 +697,22 @@ body {
     .share-card-content {
         flex-direction: column;
         gap: 24px;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .share-text-content {
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left;
     }
 
     .share-image {
         max-width: 240px;
+        align-self: center;
+    }
+
+    .icloud-image {
+        align-self: center;
+        margin-bottom: 16px;
     }
 
     .widgets-table {
