@@ -339,6 +339,104 @@ body {
     flex: 1;
 }
 
+/* Card Badges */
+.card-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.new-badge,
+.platform-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1.5px solid #c15f3c;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #c15f3c;
+    letter-spacing: 0.02em;
+}
+
+.new-badge {
+    margin-bottom: 20px;
+}
+
+.card-badges .new-badge {
+    margin-bottom: 0;
+}
+
+/* New Features Row (Companion Apps & iCloud Sync) */
+.new-features-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+    align-items: stretch;
+}
+
+.new-features-row .feature-card {
+    margin-top: 0;
+}
+
+.companion-card {
+    flex: 2;
+}
+
+.companion-image {
+    max-width: 100%;
+}
+
+.app-store-link {
+    font-weight: 500;
+    color: #c15f3c;
+    text-decoration: none;
+}
+
+.app-store-link:hover {
+    text-decoration: underline;
+}
+
+.icloud-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 0;
+}
+
+.icloud-content .feature-description {
+    margin-top: 0;
+}
+
+.icloud-image {
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
+}
+
+.icloud-icon {
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) brightness(0.9);
+}
+
+.icloud-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.icloud-card .feature-card-content {
+    flex: 1;
+}
+
 /* Widgets Section */
 .widgets-section {
     /* Override grid from .feature-section */
@@ -578,6 +676,17 @@ body {
     .insights-section,
     .share-section {
         margin-top: 16px;
+    }
+
+    .new-features-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .new-features-row .companion-card,
+    .new-features-row .icloud-card {
+        flex: none;
+        width: 100%;
     }
 
     .share-card-content {
