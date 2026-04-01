@@ -1,0 +1,9 @@
+{
+  "peakHours": {
+    "enabled": true,
+    "startHour": 5,
+    "endHour": 11,
+    "days": ["mon", "tue", "wed", "thu", "fri"],
+    "timezone": "America/Los_Angeles"
+  }
+}
