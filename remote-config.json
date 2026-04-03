@@ -1,9 +1,19 @@
 {
-  "peakHours": {
-    "enabled": true,
-    "startHour": 5,
-    "endHour": 11,
-    "days": ["mon", "tue", "wed", "thu", "fri"],
-    "timezone": "America/Los_Angeles"
-  }
+  "alerts": [
+    {
+      "enabled": true,
+      "startDate": null,
+      "endDate": null,
+      "startHour": 5,
+      "endHour": 11,
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "timezone": "America/Los_Angeles",
+      "icon": "flame.fill",
+      "badgeIcon": "flame.circle.fill",
+      "severity": "low",
+      "text": "High burn hours: {startHour}–{endHour}",
+      "dashboardText": "High burn hours: {startHour}–{endHour}. Limits reset faster during this window.",
+      "url": null
+    }
+  ]
 }
