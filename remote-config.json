@@ -12,7 +12,7 @@
       "badgeIcon": "flame.circle.fill",
       "severity": "low",
       "text": "High burn hours: {startHour}–{endHour}",
-      "dashboardText": "High burn hours: {startHour}–{endHour}. Limits reset faster during this window.",
+      "dashboardText": "High burn hours: {startHour}–{endHour} on week days. Limits reset faster during this window.",
       "url": null
     }
   ]
